@@ -24,22 +24,22 @@
             <div class = "conteiner_contactos">
                 <form action="" method="post">
                     <fieldset>
-                            <legend class="legenda"> Formulario de Contacto</legend>
-                            <p class="formu_etiquetas"><label for="name">Nombre: <input type="text" name="name" maxlength="20" required></label></p>
-                            <p class="formu_etiquetas"><label for="name">Apellido: <input type="text" name="Apellido" maxlength="20" ></label></p>                            
-                            <p class="formu_etiquetas"><label for="name">E-mail: <input type="email" name="email"  required></label></p>                           
-                            <p class="formu_etiquetas"><label for="name">Telefono: <input type="tel" name="Telefono" placeholder="Ingrese su Telefono"></label></p>                            
-                            <p class="formu_etiquetas"><label for="name">Edad: <input type="number" name="Edad" min="16" max="120"  size="20"></label></p>                            
-                            <p class="formu_etiquetas"><label for="name">Direccion: <input type="text" name="Direccion" ></label></p>                            
-                            <p class="formu_etiquetas"><label for="name">Provincia: <input name="Provincia" list="Provincia"></label>
-                                <datalist id = "Provincia">
-                                <option value="Neuquen"></option>
-                                <option value="Rio Negro"></option>
-                                <option value="Chubut"></option>
-                                <option value="Santa Cruz"></option>
-                                <option value="Tierra del Fuego"></option>
-                                </datalist></p>                            
-                            <p class="formu_etiquetas"><label for="name">Codigo Postal: <input type="text" name="Codigo" ></label></p>    
+                        <legend class="legenda"> Formulario de Contacto</legend>
+                        <p class="formu_etiquetas"><label for="name">Nombre: <input type="text" name="name" maxlength="20" required></label></p>
+                        <p class="formu_etiquetas"><label for="name">Apellido: <input type="text" name="Apellido" maxlength="20" ></label></p>                            
+                        <p class="formu_etiquetas"><label for="name">E-mail: <input type="email" name="email"  required></label></p>                           
+                        <p class="formu_etiquetas"><label for="name">Telefono: <input type="tel" name="Telefono" placeholder="Ingrese su Telefono"></label></p>                            
+                        <p class="formu_etiquetas"><label for="name">Edad: <input type="number" name="Edad" min="16" max="120"  size="20"></label></p>                            
+                        <p class="formu_etiquetas"><label for="name">Direccion: <textarea name="Direccion" cols="20" rows="1"></textarea></label></p>                            
+                        <p class="formu_etiquetas"><label for="name">Provincia: <input name="Provincia" list="Provincia"></label>
+                            <datalist id = "Provincia">
+                            <option value="Neuquen"></option>
+                            <option value="Rio Negro"></option>
+                            <option value="Chubut"></option>
+                            <option value="Santa Cruz"></option>
+                            <option value="Tierra del Fuego"></option>
+                            </datalist></p>                            
+                        <p class="formu_etiquetas"><label for="name">Codigo Postal: <input type="text" name="Codigo" pattern="[A-Z]{1} [0-9]{4} [0-9]{4}" required></label></p>    
                     </fieldset>
                     <fieldset>
                         <legend class="legenda">Metodos Preferidos De Contacto </legend>
