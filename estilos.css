@@ -21,11 +21,10 @@ body{
 .contenedor-header{
     margin: auto;
     width: 100%;
+    border-bottom:1px solid red ;
     
 }
-.colorcito{
-    border-color: red;
-}
+
 .navBar{
     font-size: 17px;
     display: flex;
@@ -58,6 +57,10 @@ body{
 .nav-Menu ul li{
     color: #f2f5f3;
 }
+.categoria{
+    color: rgb(252, 234, 186);
+}
+
 /*>----------------------------------------------------BODY-----------------------------------------------------<*/
 
 
@@ -135,8 +138,8 @@ font-size: 30px;
 }
 /*>-------------------------------------------------CONTACTOS---------------------------------------------------<*/
 .conteiner_contactos{
-    margin-left: 40%;
-    border: 1px solid #f00707;
+    margin-left: 35%;
+    border: 2px solid #070707;
     width: 450px;
     background: #44A08D;  
     background: -webkit-linear-gradient(to right, #093637, #44A08D);  
