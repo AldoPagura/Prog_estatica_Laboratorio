@@ -26,13 +26,15 @@ body{
 }
 
 .navBar{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
     font-size: 17px;
     display: flex;
     justify-content: space-between;
     background-color: black;
     align-items: center;
     height: 70px;
-    padding: 20px 0px;
 }
 .logo-A{
     width: 70px;
@@ -40,25 +42,26 @@ body{
 }
 
 .nav-Menu{
+    position: relative;
     display: flex;
     flex-direction: row;
-    width: 35%;
-    justify-content: space-between;
+    width: 60%;
+    justify-content: space-around;
     margin: auto;
     color: #f2f5f3;
     
 }
-.nav-Menu ul{
-    
-    display: flex;
-    color: #f2f5f3;
-}
-
-.nav-Menu ul li{
-    color: #f2f5f3;
-}
 .categoria{
-    color: rgb(252, 234, 186);
+    color: rgb(245, 195, 33);
+    
+    
+}
+.categoria:hover{
+    cursor: pointer;
+    background-color: #f2f5f3;
+    color: #0d0e0d;
+    padding: 5px;
+    border-radius: 2px;
 }
 
 /*>----------------------------------------------------BODY-----------------------------------------------------<*/
@@ -84,15 +87,47 @@ body{
     height: 110px;
     width: 400px;
 }
+.logo_unco{
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    transition: .5s, color 1s;
+    transform: rotateY('360deg');
+    
+
+}
+
 .titulo_h1{
-    font-size: 50px;
+    font-size: 45px;
+    transition: all 0.5s ease-in-out;
     
 }
+.titulo_h1:hover{
+    font-size: 53px;
+    filter: drop-shadow(2px 2px 2px #07d3ee);
+    color: #070707;
+}
+.titulo_h2{
+    font-size: 20px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
 .conteiner_proyectos h3{
     display: flex;
     justify-content: center;
     font-size: 40px;
 }
+.conteiner_proyectos p{
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .conteiner_footer{
     height:160px;
     background-color: black;
@@ -136,10 +171,20 @@ font-size: 30px;
 
 }
 .bio_text{
-    width: auto;
+    width: 600px;
     height: 300px;
     padding-left: 30px;
     padding-top: 5px;
+    overflow: auto;
+    margin-left: 40px; 
+}
+.bio_first{
+    position:sticky;
+    top: 0;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: beige;
+    color: black;
 }
 .fotito{
     width: 350px;
@@ -148,9 +193,11 @@ font-size: 30px;
 }
 /*>-------------------------------------------------CONTACTOS---------------------------------------------------<*/
 .conteiner_contactos{
-    margin-left: 35%;
+    margin-top: 100px;
+    margin-left: 28%;
+    margin-bottom: 40px;
     border: 2px solid #070707;
-    width: 450px;
+    width: 650px;
     background: #44A08D;  
     background: -webkit-linear-gradient(to right, #093637, #44A08D);  
     background: linear-gradient(to right, #093637, #44A08D); 

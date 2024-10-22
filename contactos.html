@@ -39,26 +39,28 @@
                             <option value="Santa Cruz"></option>
                             <option value="Tierra del Fuego"></option>
                             </datalist></p>                            
-                        <p class="formu_etiquetas"><label for="name">Codigo Postal: <input type="text" name="Codigo" pattern="[A-Z]{1} [0-9]{4} [0-9]{4}" required></label></p>    
+                        <p class="formu_etiquetas"><label for="name">Codigo Postal: <input type="text" name="Codigo" pattern="[A-Z]{1}[0-9]{4}[0-9]{4}" required></label></p>    
                     </fieldset>
                     <fieldset>
                         <legend class="legenda">Metodos Preferidos De Contacto </legend>
-                        <p class="formu_etiquetas"><input type="radio" name="contacto" checked> Correo Electronico</p>
-                        <p class="formu_etiquetas"><input type="radio" name="contacto" > Correo Postal</p>
-                        <p class="formu_etiquetas"><input type="radio" name="contacto" > Telefono </p>
+                        <p class="formu_etiquetas" ><input type="radio" name="contacto" checked id="correo_electronico" value="correo_electronico"><label for="correo_electronico"> Correo Electronico</label></p>
+                        <p class="formu_etiquetas" ><input type="radio" name="contacto" id="correo_postal" value="correo_postal"><label for="correo_postal"> Correo Postal</label></p>
+                        <p class="formu_etiquetas" ><input type="radio" name="contacto" id="Telefono" value="Telefono"><label for="Telefono"> Telefono </p>
                     </fieldset>
                     <fieldset>
                         <legend class="legenda">Tipo de Suscripcion </legend>
-                        <p class="formu_etiquetas"><input type="checkbox" name="suscripcion" > Noticias</p>
-                        <p class="formu_etiquetas"><input type="checkbox" name="suscripcion" > Promociones</p>
-                        <p class="formu_etiquetas"><input type="checkbox" name="suscripcion" checked > Alertas </p>
-                        <p class="formu_etiquetas"><input type="checkbox" name="suscripcion" > Eventos </p>
+                        <p class="formu_etiquetas"><input type="checkbox" name="noticias" id="noticias" value="noticias"> <label for="noticias"> Noticias</label> </p>
+                        <p class="formu_etiquetas"><input type="checkbox" name="promociones" id="promociones" value="promociones" > <label for="promociones"> Promociones</label></p>
+                        <p class="formu_etiquetas"><input type="checkbox" name="alertas" checked id="alertas" value="alertas"> <label for="alertas"> Alertas</label> </p>
+                        <p class="formu_etiquetas"><input type="checkbox" name="eventos" id="eventos" value="eventos"> <label for="eventos"> Eventos</label> </p>
                     </fieldset>
                     <input type="submit" value="Cargar" class="btn_cargar">
                     <table>
                         <thead>
-                            <th> Campos </th>
-                            <th> Valor </th>
+                            <tr>
+                                <th> CAMPOS </th>
+                                <th> VALOR </th>
+                            </tr>
                         </thead>
                         <tbody>
                             <tr>
@@ -86,7 +88,11 @@
                                 <td></td>
                             </tr>
                             <tr>
-                                <td>Nombre</td>
+                                <td>Provincia</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Codigo Postal</td>
                                 <td></td>
                             </tr>
                         </tbody>
