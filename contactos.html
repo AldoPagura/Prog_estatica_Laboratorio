@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <header class = "contenedor-header">
-        <nav class="navBar">
+    <header class = "contenedor-header" id="header_inicio">
+        <nav class="navBar" id="navBar">
            <img src="img/logoA.jpg" alt="Logo_Marca" class="logo-A">
            <ul class="nav-Menu">
                <li><a href="index.html" class= "categoria">INICIO</a></li>
@@ -20,10 +20,13 @@
         </nav>
     </header>
     <main>
+        <div class = "subir_inicio">
+            <a href="#header_inicio" ><img src="img/flecharriba.png" alt="Flecha hacia arriba" class="subir_inicio"></a>
+        </div>
         <section>
             <div class = "conteiner_contactos">
                 <form action="" method="post">
-                    <fieldset>
+                    <fieldset class="formu">
                         <legend class="legenda"> Formulario de Contacto</legend>
                         <p class="formu_etiquetas"><label for="name">Nombre: <input type="text" name="name" maxlength="20" required></label></p>
                         <p class="formu_etiquetas"><label for="name">Apellido: <input type="text" name="Apellido" maxlength="20" ></label></p>                            
@@ -31,7 +34,7 @@
                         <p class="formu_etiquetas"><label for="name">Telefono: <input type="tel" name="Telefono" placeholder="Ingrese su Telefono"></label></p>                            
                         <p class="formu_etiquetas"><label for="name">Edad: <input type="number" name="Edad" min="16" max="120"  size="20"></label></p>                            
                         <p class="formu_etiquetas"><label for="name">Direccion: <textarea name="Direccion" cols="20" rows="1"></textarea></label></p>                            
-                        <p class="formu_etiquetas"><label for="name">Provincia: <input name="Provincia" list="Provincia"></label>
+                        <p class="formu_etiquetas"><label for="name">Provincia: <input type="text" name="Provincia" list="Provincia"></label>
                             <datalist id = "Provincia">
                             <option value="Neuquen"></option>
                             <option value="Rio Negro"></option>
@@ -54,7 +57,7 @@
                         <p class="formu_etiquetas"><input type="checkbox" name="alertas" checked id="alertas" value="alertas"> <label for="alertas"> Alertas</label> </p>
                         <p class="formu_etiquetas"><input type="checkbox" name="eventos" id="eventos" value="eventos"> <label for="eventos"> Eventos</label> </p>
                     </fieldset>
-                    <input type="submit" value="Cargar" class="btn_cargar">
+                    <input type="submit" value="CARGAR" class="btn_cargar">
                     <table>
                         <thead>
                             <tr>
@@ -96,6 +99,12 @@
                                 <td></td>
                             </tr>
                         </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>CAMPOS</th>
+                                <th> VALOR </th>
+                            </tr>
+                        </tfoot>
                     </table>
                 </form>  
             </div>    
