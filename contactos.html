@@ -28,37 +28,39 @@
                 <form action="" method="post">
                     <fieldset class="formu">
                         <legend class="legenda"> Formulario de Contacto</legend>
-                        <p class="formu_etiquetas"><label for="name">Nombre: <input type="text" name="name" maxlength="20" required></label></p>
-                        <p class="formu_etiquetas"><label for="name">Apellido: <input type="text" name="Apellido" maxlength="20" ></label></p>                            
-                        <p class="formu_etiquetas"><label for="name">E-mail: <input type="email" name="email"  required></label></p>                           
-                        <p class="formu_etiquetas"><label for="name">Telefono: <input type="tel" name="Telefono" placeholder="Ingrese su Telefono"></label></p>                            
-                        <p class="formu_etiquetas"><label for="name">Edad: <input type="number" name="Edad" min="16" max="120"  size="20"></label></p>                            
-                        <p class="formu_etiquetas"><label for="name">Direccion: <textarea name="Direccion" cols="20" rows="1"></textarea></label></p>                            
-                        <p class="formu_etiquetas"><label for="name">Provincia: <input type="text" name="Provincia" list="Provincia"></label>
-                            <datalist id = "Provincia">
+                        <p class="formu_etiquetas"><label for="name">Nombre: <input id="Nombre" onblur="cap_event('Nombre')" type="text" name="Nombre" maxlength="20" required></label></p>
+                        <p class="formu_etiquetas"><label for="name">Apellido: <input id="Apellido" onblur="cap_event('Apellido')" type="text" name="Apellido" maxlength="20" required></label></p>                            
+                        <p class="formu_etiquetas"><label for="name">E-mail: <input id="email" onblur="cap_event('email')" type="email" name="email"  required></label></p>                           
+                        <p class="formu_etiquetas"><label for="name">Telefono: <input id="Telefono" onblur="cap_event('Telefono')" type="tel" name="Telefono" placeholder="Ingrese su Telefono" required></label></p>                            
+                        <p class="formu_etiquetas"><label for="name">Edad: <input id="Edad" type="number" onblur="cap_event('Edad')" name="Edad" min="16" max="120"  size="20" required></label></p>                            
+                        <p class="formu_etiquetas"><label for="name">Direccion: <textarea id="Direccion" onblur="cap_event('Direccion')" name="Direccion" cols="20" rows="1" required></textarea></label></p>                            
+                        <p class="formu_etiquetas"><label for="name">Provincia: <input id = "Provincia" type="text" onblur="cap_event('Provincia')" name="Provincia" list="Provincias" required></label>
+                           
+                            <datalist id = "Provincias">
                             <option value="Neuquen"></option>
                             <option value="Rio Negro"></option>
                             <option value="Chubut"></option>
                             <option value="Santa Cruz"></option>
                             <option value="Tierra del Fuego"></option>
                             </datalist></p>                            
-                        <p class="formu_etiquetas"><label for="name">Codigo Postal: <input type="text" name="Codigo" pattern="[A-Z]{1}[0-9]{4}[0-9]{4}" required></label></p>    
+                        
+                            <p class="formu_etiquetas"><label for="name">Codigo Postal: <input id="Codigo" onblur="cap_event('Codigo')" type="text" name="Codigo" pattern="[A-Z]{1}[0-9]{4}[0-9]{4}" required></label></p>    
                     </fieldset>
                     <fieldset>
                         <legend class="legenda">Metodos Preferidos De Contacto </legend>
-                        <p class="formu_etiquetas" ><input type="radio" name="contacto" checked id="correo_electronico" value="correo_electronico"><label for="correo_electronico"> Correo Electronico</label></p>
-                        <p class="formu_etiquetas" ><input type="radio" name="contacto" id="correo_postal" value="correo_postal"><label for="correo_postal"> Correo Postal</label></p>
-                        <p class="formu_etiquetas" ><input type="radio" name="contacto" id="Telefono" value="Telefono"><label for="Telefono"> Telefono </p>
+                        <p class="formu_etiquetas" ><input type="radio" onblur="radio_tabla()" name="contacto" checked id="correo_electronico" value="Correo_electronico"><label for="correo_electronico"> Correo Electronico</label></p>
+                        <p class="formu_etiquetas" ><input type="radio" onblur="radio_tabla()" name="contacto" id="correo_postal" value="Correo_postal"><label for="correo_postal"> Correo Postal</label></p>
+                        <p class="formu_etiquetas" ><input type="radio" onblur="radio_tabla()" name="contacto" id="telefono" value="Telefono"><label for="Telefono"> Telefono </p>
                     </fieldset>
                     <fieldset>
                         <legend class="legenda">Tipo de Suscripcion </legend>
-                        <p class="formu_etiquetas"><input type="checkbox" name="noticias" id="noticias" value="noticias"> <label for="noticias"> Noticias</label> </p>
-                        <p class="formu_etiquetas"><input type="checkbox" name="promociones" id="promociones" value="promociones" > <label for="promociones"> Promociones</label></p>
-                        <p class="formu_etiquetas"><input type="checkbox" name="alertas" checked id="alertas" value="alertas"> <label for="alertas"> Alertas</label> </p>
-                        <p class="formu_etiquetas"><input type="checkbox" name="eventos" id="eventos" value="eventos"> <label for="eventos"> Eventos</label> </p>
+                        <p class="formu_etiquetas"><input type="checkbox" onchange="check_tabla()" name="Noticias" id="noticias" value="Noticias"> <label for="noticias"> Noticias</label> </p>
+                        <p class="formu_etiquetas"><input type="checkbox" onchange="check_tabla()" name="Promociones" id="promociones" value="Promociones" > <label for="promociones"> Promociones</label></p>
+                        <p class="formu_etiquetas"><input type="checkbox" onchange="check_tabla()" name="Alertas" checked id="alertas" value="Alertas"> <label for="alertas"> Alertas</label> </p>
+                        <p class="formu_etiquetas"><input type="checkbox" onchange="check_tabla()" name="Eventos" id="eventos" value="Eventos"> <label for="eventos"> Eventos</label> </p>
                     </fieldset>
                     <input type="submit" value="CARGAR" class="btn_cargar">
-                    <table>
+                    <table id="tablaValores">
                         <thead>
                             <tr>
                                 <th> CAMPOS </th>
@@ -68,35 +70,43 @@
                         <tbody>
                             <tr>
                                 <td>Nombre</td>
-                                <td></td>
+                                <td id="nombre_tabla"></td>
                             </tr>
                             <tr>
                                 <td>Apellido</td>
-                                <td></td>
+                                <td id="apellido_tabla"></td>
                             </tr>
                             <tr>
                                 <td>Mail</td>
-                                <td></td>
+                                <td id="email_tabla"></td>
                             </tr>
                             <tr>
                                 <td>Telefono</td>
-                                <td></td>
+                                <td id="telefono_tabla"></td>
                             </tr>
                             <tr>
                                 <td>Edad</td>
-                                <td></td>
+                                <td id="edad_tabla"></td>
                             </tr>
                             <tr>
                                 <td>Direccion</td>
-                                <td></td>
+                                <td id="direccion_tabla"></td>
                             </tr>
                             <tr>
                                 <td>Provincia</td>
-                                <td></td>
+                                <td id="provincia_tabla"></td>
                             </tr>
                             <tr>
                                 <td>Codigo Postal</td>
-                                <td></td>
+                                <td id="codigo_tabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Metodo de contacto</td>
+                                <td id="contacto_tabla"></td>
+                            </tr>
+                            <tr>
+                                <td>Suscripcion</td>
+                                <td id="Suscripcion_tabla"></td>
                             </tr>
                         </tbody>
                         <tfoot>
@@ -110,6 +120,7 @@
             </div>    
         </section>
     </main>
-    
+
+<script src="script.js"></script>
 </body>
 </html>

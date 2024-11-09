@@ -185,8 +185,12 @@ body{
 .titulo_bio{
 margin-top: 20px;
 margin-left: 45%;
-font-size: 30px;
-
+font-size: 40px;
+color: #f2f5f3;
+position: relative;
+top: 50px;
+left: 50px;
+font-family:Georgia, 'Times New Roman', Times, serif
 }
 .bio_foto{
     display: flex;
@@ -201,20 +205,21 @@ font-size: 30px;
     padding-top: 5px;
     overflow: auto;
     margin-left: 40px; 
+    margin-top: 20px;
 }
 .bio_first{
     position:sticky;
-    top: 0;
-    border: 1px solid black;
-    padding: 5px;
-    background-color: beige;
-    color: black;
+    top:0%;
+    left: 0%;
+    color: #111111;/*cambie el color solo para que se vea mejor el efecto*/
+    
 }
 .fotito{
     width: 350px;
     height: 350px;
     border-radius: 60%;
 }
+
 /*>-------------------------------------------------CONTACTOS---------------------------------------------------<*/
 .conteiner_contactos{
     margin-top: 100px;
@@ -282,8 +287,9 @@ table{
 th, td{
     border: 1px solid white;
     text-align: left;
-    padding: 10px 20px; 
+    padding: 10px ;
 }
+
 th{
     font-size: 22px;
     text-align: center;
