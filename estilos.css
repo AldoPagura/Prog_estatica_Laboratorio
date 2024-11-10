@@ -200,7 +200,7 @@ font-family:Georgia, 'Times New Roman', Times, serif
 }
 .bio_text{
     width: 600px;
-    height: 300px;
+    height: 400px;
     padding-left: 30px;
     padding-top: 5px;
     overflow: auto;
@@ -211,13 +211,26 @@ font-family:Georgia, 'Times New Roman', Times, serif
     position:sticky;
     top:0%;
     left: 0%;
-    color: #111111;/*cambie el color solo para que se vea mejor el efecto*/
+    color: #111111;
     
 }
 .fotito{
     width: 350px;
     height: 350px;
     border-radius: 60%;
+}
+#LeerMas_CV{
+    display: none;
+    color: #111111
+}
+#LeerMas_btn{
+    width: 100px;
+    height: 45px;
+    background-color: #408156;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+    color: #f2f5f3;
 }
 
 /*>-------------------------------------------------CONTACTOS---------------------------------------------------<*/

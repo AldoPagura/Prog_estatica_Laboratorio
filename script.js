@@ -67,3 +67,16 @@ function check_tabla(){
 };
 
 
+function LeerMas(){
+    
+    let LeerMas_btn = document.getElementById('LeerMas_btn');
+    let LeerMas_CV = document.getElementById('LeerMas_CV');
+
+    if (LeerMas_CV.style.display === 'none') {
+        LeerMas_CV.style.display = 'inline';
+        LeerMas_btn.textContent = 'LEER MENOS';
+    } else {
+        LeerMas_CV.style.display = 'none';
+        LeerMas_btn.textContent = 'LEER MAS';
+    }
+};
