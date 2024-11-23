@@ -225,7 +225,8 @@ font-family:Georgia, 'Times New Roman', Times, serif
 }
 #LeerMas_btn{
     width: 100px;
-    height: 45px;
+    height: 50px;
+    text-align: center;
     background-color: #408156;
     border-radius: 10px;
     margin-left: 40px;
@@ -307,3 +308,62 @@ th{
     font-size: 22px;
     text-align: center;
 }
+
+/*<----------------------------------------juegos--------------------------------------------*/
+
+
+#juego-container {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    width: 600px;
+    height: 450px;
+    background-color: #44A08D;
+    color: white;
+    position: relative;
+    top: 40px;
+    left: 400px;
+    border-radius: 10px;
+    border: #070707 2px solid;
+    
+}
+#titulo_juego{
+    font-size: 45px;
+    text-align: center;
+    color:#eff318;
+    margin-top: 30px;
+}
+.contenedor_juego{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#adivinar{
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin-top: 30px;
+    margin-left: 220px;
+
+}
+#Verificar{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 40px;
+    background-color: #070707;
+    color:white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#resultado{
+    font-size: 30px;
+    font-family: monospace;
+}
+
+
+
+
+

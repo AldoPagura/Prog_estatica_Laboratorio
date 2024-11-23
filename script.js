@@ -4,7 +4,7 @@ function cap_event(campo){
         let valor = document.getElementById(campo).value;
         
    if(campo== 'Nombre'){
-        document.getElementById('nombre_tabla').textContent = valor;
+        document.getElementById('nombre_tabla').innerHTML = valor;
     }else if(campo== 'Apellido'){
         document.getElementById('apellido_tabla').textContent = valor;
     }else if(campo== 'email'){
@@ -36,9 +36,8 @@ function radio_tabla(){
         opcionesSeleccionadas.push('Telefono');
     }
     
-    // Si hay opciones seleccionadas, mostrar en la tabla; si no, poner "Ninguna"
     if (opcionesSeleccionadas.length > 0) {
-        document.getElementById('contacto_tabla').textContent = opcionesSeleccionadas.join(', ');
+        document.getElementById('contacto_tabla').textContent = opcionesSeleccionadas.join();
     } 
 }
 
@@ -80,3 +79,22 @@ function LeerMas(){
         LeerMas_btn.textContent = 'LEER MAS';
     }
 };
+
+let numeroSecreto = Math.floor(Math.random() * 100) + 1;
+let intentos = 0;
+
+function verificarNumero() {
+    const numeroUsuario = parseInt(document.getElementById('adivinar').value);
+    intentos++;
+
+    if (isNaN(numeroUsuario) || numeroUsuario < 1 || numeroUsuario > 100) {
+        document.getElementById('resultado').textContent = 'Por favor, introduce un número entre 1 y 100.';
+    } else if (numeroUsuario === numeroSecreto) {
+        document.getElementById('resultado').textContent = `¡Felicidades! Adivinaste el número es: ${numeroSecreto}, lo hiciste en ${intentos} intentos.`;
+    } else if (numeroUsuario < numeroSecreto) {
+         document.getElementById('resultado').textContent = 'El número es un poco más alto.';
+    } else {
+        document.getElementById('resultado').textContent = 'El número es un poco más bajo.';
+    }
+};
+
